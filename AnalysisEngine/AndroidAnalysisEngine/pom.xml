@@ -59,10 +59,10 @@
 	              <goal>copy-resources</goal>
 	            </goals>
 	            <configuration>
-	              <outputDirectory>${basedir}/target/spawn</outputDirectory>
+	              <outputDirectory>${basedir}/target/spawnsource</outputDirectory>
 	              <resources>          
 	                <resource>
-	                  <directory>${basedir}/target/spawn</directory>
+	                  <directory>${basedir}/spawnsource</directory>
 	                  <filtering>true</filtering>
 	                </resource>
 	              </resources>              
