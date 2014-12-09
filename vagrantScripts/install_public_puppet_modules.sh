@@ -1,6 +1,6 @@
 #!/bin/bash
 #installs modules right on the vm
-echo "Installing public puppet modules"
+echo "Installing public puppet modules";
 
 mkdir -p /etc/puppet/modules;
 puppet module install puppetlabs/ntp;

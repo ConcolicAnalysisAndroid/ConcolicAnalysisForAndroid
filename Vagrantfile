@@ -24,7 +24,7 @@ Vagrant::Config.run do |config|
   #config.vm.share_folder "maven-repo", "/.m2", "~/.m2"
 
   #installs public puppet modules in the VM, as it's pain to do on OSX
-  config.vm.provision "shell", path: "puppet/install_public_modules.sh"
+  config.vm.provision "shell", path: "vagrantScripts/install_public_puppet_modules.sh"
 
   # Enable provisioning with Puppet stand alone.
   config.vm.provision "puppet" do |puppet|
@@ -33,8 +33,11 @@ Vagrant::Config.run do |config|
     puppet.manifest_file = "site.pp"
   end
 
-  config.vm.provision "shell", inline: "sudo wget http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo"
-  config.vm.provision "shell", inline: "sudo yum install -y apache-maven"
+  #other tools
+  config.vm.provision "shell", path: "vagrantScripts/maven_setup.sh"
+  config.vm.provision "shell", path: "vagrantScripts/dex2jar_setup.sh"
+  config.vm.provision "shell", path: "vagrantScripts/apktools_setup.sh"
+  config.vm.provision "shell", path: "vagrantScripts/jpf_setup.sh"
 
 end
 

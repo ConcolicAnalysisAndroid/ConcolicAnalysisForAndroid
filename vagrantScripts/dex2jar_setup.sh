@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Installing apktools"
+echo "Installing dex2jar";
 TARGET_DIR=/home/vagrant/Workspace/tools/;
 D2J_VERSION=0.0.9.15;
 D2J_FILENAME=dex2jar.zip
