@@ -1,0 +1,10 @@
+android.app.ActivityGroup
+android.app.ExpandableListActivity
+android.app.NativeActivity
+android.app.TabActivity
+android.app.ListActivity
+android.accounts.AccountAuthenticatorActivity
+android.app.AliasActivity
+android.support.v4.app.FragmentActivity
+android.app.LauncherActivity
+android.preference.PreferenceActivity

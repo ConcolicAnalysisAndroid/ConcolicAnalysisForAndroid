@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: spawn.WrapperRunner{{INDEX}}
+Created-By: AndroidAnalysisEngine
+Class-Path: {{CLASSPATH}}

@@ -1,0 +1,20 @@
+package spawn;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.robolectric.Robolectric;
+import org.robolectric.RobolectricTestRunner;
+import org.robolectric.annotation.Config;
+{{CLASS_IMPORTS}}
+
+@RunWith(RobolectricTestRunner.class)
+@Config(emulateSdk=18, manifest = "./spawn/AndroidManifest.xml")
+public class Wrapper{{INDEX}} {
+
+	@Test
+	public void theGreatTest(){
+		System.out.println("Starting function calls");
+{{FUNCTION_CALLS}}
+        System.out.println("Finished with function calls");
+	}
+}

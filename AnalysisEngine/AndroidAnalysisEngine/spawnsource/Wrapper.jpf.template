@@ -1,0 +1,15 @@
+target=spawn.WrapperRunner{{INDEX}}
+#report.console.property_violation=error
+classpath = {{CLASSPATH}}
+
+symbolic.method={{FUNCTIONS_TO_TEST}}
+
+search.class=gov.nasa.jpf.search.Simulation
+listener = gov.nasa.jpf.symbc.SymbolicListener
+
+symbolic.debug=on
+symbolic.concolic=true
+
+log.level=finer
+
+search.multiple_errors=true
