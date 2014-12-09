@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Installing Java Pathfinder";
-TARGET_DIR=/home/vagrant/Workspace/tools/jpf;
+TARGET_DIR=/home/vagrant/Workspace/AnalysisEngine/tools/jpf;
 CORE_DIR=$TARGET_DIR/jpf-core;
 SYMBC_DIR=$TARGET_DIR/jpf-symbc;
 

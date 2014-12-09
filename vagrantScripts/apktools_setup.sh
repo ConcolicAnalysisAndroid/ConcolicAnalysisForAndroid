@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Installing apktools";
-TARGET_DIR=/home/vagrant/Workspace/tools/apktools;
+TARGET_DIR=/home/vagrant/Workspace/AnalysisEngine/tools/apktools;
 APKTOOLS_VERSION=2.0.0rc3;
 APKTOOLS_FILENAME=apktools.jar
 
