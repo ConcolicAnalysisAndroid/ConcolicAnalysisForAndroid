@@ -49,7 +49,7 @@ public class ActivityFinder implements FunctionFinder {
         Reflections reflections = new Reflections(
 
             new ConfigurationBuilder()
-            	//.filterInputsBy(new FilterBuilder().include("com.octo.*"))
+            	.filterInputsBy(new FilterBuilder().exclude("org.robolectric.*")) //robolectric has issues 
             	.setUrls(ClasspathHelper.forClassLoader(allLoader)).addClassLoader(allLoader)
                 .setScanners(new SubTypesScanner())
         );

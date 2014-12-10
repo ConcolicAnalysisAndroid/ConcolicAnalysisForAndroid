@@ -8,7 +8,7 @@ import org.robolectric.annotation.Config;
 {{CLASS_IMPORTS}}
 
 @RunWith(RobolectricTestRunner.class)
-@Config(emulateSdk=18, manifest = "./spawn/AndroidManifest.xml")
+@Config(emulateSdk=18, manifest = "spawn/AndroidManifest.xml")
 public class Wrapper{{INDEX}} {
 
 	@Test

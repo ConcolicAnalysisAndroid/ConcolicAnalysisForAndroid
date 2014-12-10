@@ -40,6 +40,10 @@ public class Config {
 	public String getDex2JarPath(){
 		return props.getProperty("dex2jar_path");
 	}
+	
+	public String getApktoolsPath(){
+		return props.getProperty("apktools_path");
+	}
 
 	public String getSpawnSourceFolder() {
 		return spawnSourceFolder;
