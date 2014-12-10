@@ -20,11 +20,11 @@ public class Engine {
 			System.out.println(e.getMessage());
 		}
 		
+        //order exists this way because apktools doesn't like folder merges
+        // so we create the folder then flesh it out
 		System.out.println("Creating spawnpit!");
 		SpawnBuilder spawnbuilder = new SpawnBuilder();
 		Path path = spawnbuilder.buildSpawn(sourcePath);
-		
-		
 		
 		
 		ApkToJarConverter converter = new Dex2JarWrapper();

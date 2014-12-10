@@ -70,7 +70,8 @@ public class SourceWriter {
 			}
 		}
 		
-		functionLines += "\t\t}catch(RuntimeException ex){\n\t\t\tSystem.out.println(\"Hit Runtime Exception! \"+ex.toString());\n\t\t}\n";
+		//for things beyond the capabilities of generic mocks
+		functionLines += "\t\t}catch(RuntimeException ex){\n\t\t\tSystem.out.println(\"Mockable Terminus!\");\n\t\t}\n"; 
 		 
 	}
 	
