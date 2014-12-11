@@ -51,15 +51,15 @@ Linux or possibly OSX only.  Windows is not supported at this time.  Hence, the 
   * This only should be an issue for running on local machines - the VM should have an appropriate JDK installed and configured
   * Requires at least 1.7
   * Please make sure your default JRE and default JRE are the same major version in the event of a major/minor conflict,
-* Java Pathfinder requires some special setup, especially the site.properties - the VM setup takes care of this, but for local development this should become necessary.  Instructions
+* Java Pathfinder requires some special setup, especially the site.properties - the VM setup takes care of this, but for local development this should become necessary.  Instructions can be found [here](http://babelfish.arc.nasa.gov/trac/jpf/wiki/install/site-properties).  Both the *core* and *symbolic* modules are *required*.
 
-## Tools Used
+## Notable Tools Used
 
-* Android
-* Java Pathfinder
-* ApkTools
-* Dex2Jar
-* Robolectric
+* [Android](https://developer.android.com/index.html)
+* [Java Pathfinder](http://babelfish.arc.nasa.gov/trac/jpf)
+* [ApkTools](https://code.google.com/p/android-apktool/)
+* [Dex2Jar](https://code.google.com/p/dex2jar/)
+* [Robolectric](http://robolectric.org/)
 
 ## Project status
 
