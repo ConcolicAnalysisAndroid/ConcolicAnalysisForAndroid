@@ -2,7 +2,7 @@
 
 ## Description
 
-The goal of this project is to provide a
+The goal of this project is to provide a tool to allow concolic analysis of arbitrary black box Android APKs.  The long term intention is for the analysis of APKs in order to detect malicious clones, but the tool stands on its own.
 
 ## General setup:
 
@@ -67,5 +67,4 @@ Due to an outstanding issue in Java Pathfinder, output is limited.  Coverage is 
 
 ## Credits
 
-Original idea from Daniel Krutz
-Based in part from research by Justin Peterson
+Original idea from Daniel Krutz.  Based in part from research by Justin Peterson
