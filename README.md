@@ -8,7 +8,7 @@ The goal of this project is to provide a
 
 1. Set up the VM
   1. Install Vagrant
-  2. Go to the root directoroty of the repo (where this file is)
+  2. Go to the root directory of the repo (where this file is)
   3. Run "vagrant up" and wait for the machine to come online
   4. Run "vagrant ssh" to enter the virtual machine
 2. All included projects will be in "~/Workspace/" in the VM
@@ -43,7 +43,7 @@ Linux or possibly OSX only.  Windows is not supported at this time.  Hence, the 
 * A good small test APK may be found [here](https://github.com/stephanenicolas/RoboDemo/robodemo-sample-1.0.1.apk/qr_code).
 
 
-## Helpful notes
+## Helpful Notes
 
 * All the tools are installed in "AnalysisEngine/tools/"
 * Sometimes the app dislikes running from the target directory.  In this case, move the created jar and directories up one level (to AnalysisEngine/AndroidAnalysisEngine/).  This frequently helps.  Make sure to check configs for correctness after.
