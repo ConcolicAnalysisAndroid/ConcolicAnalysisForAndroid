@@ -63,7 +63,7 @@ Linux or possibly OSX only.  Windows is not supported at this time.  Hence, the 
 
 ## Project status
 
-Due to an outstanding issue in Java Pathfinder, output is limited.  Coverage is currently limited to activity initializations.
+Due to an outstanding issue in Java Pathfinder (see [link](https://groups.google.com/forum/#!topic/java-pathfinder/vAcaeTLL1OY)), output is limited.  Coverage is currently limited to activity initializations.
 
 ## Credits
 
