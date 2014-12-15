@@ -1,4 +1,4 @@
-#Concolic Analysis System Proving Android Readiness (CASPAR)
+#Concolic Analysis for Android CAA
 
 ## Description
 
@@ -16,9 +16,9 @@ The goal of this project is to provide a tool to allow concolic analysis of arbi
 
 ## Requirements
 
-Linux or possibly OSX only.  Windows is not supported at this time.  Hence, the management has provided a lovely Vagrant VM
+Linux or possibly OSX only.  Windows is not supported at this time.  Hence, the management has provided a lovely Vagrant VM.
 
-## Analysis Engine Project Setup:
+## CAA Project Setup:
 
 1. In the VM, navigate to "~/Workspace/AnalysisEngine"
 2. In the host OS, import "AnalysisEngine/AndroidAnalysisEngine/" as a maven project in the IDE of your choice
@@ -35,10 +35,10 @@ Linux or possibly OSX only.  Windows is not supported at this time.  Hence, the 
 
 1. Navigate to the app directory
 2. Run "java -jar $JARNAME -apk $PATH\_TO\_APK
-  1. $JARNAME at this time is "AndroidAnalysisEngine-1.0.0-SNAPSHOT.jar"
+  1. $JARNAME at this time is "CAA-1.0.0.jar"
   2. $PATH\_TO\_APK may include anywhere on the system running the app
 3. Wait a while (coffee time!)
-4. Once the app in finished, the results will be under "results" in the same directory
+4. Once the app in finished, the results will be under "results" in the same directory, named "$APK_FILENAME.jpfout.txt"
 
 * A good small test APK may be found [here](https://github.com/stephanenicolas/RoboDemo/robodemo-sample-1.0.1.apk/qr_code).
 
