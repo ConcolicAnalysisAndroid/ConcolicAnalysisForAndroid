@@ -16,12 +16,12 @@ The goal of this project is to provide a tool to allow concolic analysis of arbi
 
 ## Requirements
 
-Linux or possibly OSX only.  Windows is not supported at this time.  Hence, the management has provided a lovely Vagrant VM.
+Linux or possibly OSX only.  Windows is not supported at this time.  Hence, the management has provided a lovely Vagrant virtual machine.
 
 ## CAA Project Setup:
 
 1. In the VM, navigate to "~/Workspace/AnalysisEngine"
-2. In the host OS, import "AnalysisEngine/AndroidAnalysisEngine/" as a maven project in the IDE of your choice
+2. In the host OS, import "AnalysisEngine/AndroidAnalysisEngine/" as a maven project in the IDE of your choice.  If this instruction is insufficient, please see [Project Setup in Eclipse](#eclipse)
 
 ## Building the Project:
 
@@ -64,6 +64,12 @@ Linux or possibly OSX only.  Windows is not supported at this time.  Hence, the 
 ## Project status
 
 Due to an outstanding issue in Java Pathfinder (see [link](https://groups.google.com/forum/#!topic/java-pathfinder/vAcaeTLL1OY)), output is limited.  Coverage is currently limited to activity initializations.
+
+## Project Setup in Eclipse {#eclipse}
+
+Development of the project is recommend to be done outside the provided Vagrant machine.  At this time, ONLY Unix-like systems are supported (OSX and CentOS Linux are tested - BSD flavors and Haiku are not).  If you do not have a Unix-like system available, uncomment the line "config.vm.boot\_mode = :gui" in the Vagrantfile and install Eclipse inside the VM.  This is not recommended, but should be adequate enough.
+
+
 
 ## Credits
 
