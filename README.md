@@ -1,4 +1,4 @@
-#Concolic Analysis for Android CAA
+#Concolic Analysis for Android (CAA)
 
 ## Description
 
