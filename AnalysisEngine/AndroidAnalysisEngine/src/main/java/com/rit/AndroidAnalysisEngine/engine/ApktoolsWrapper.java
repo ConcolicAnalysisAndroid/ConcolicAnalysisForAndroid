@@ -1,5 +1,6 @@
 package com.rit.AndroidAnalysisEngine.engine;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Path;
 
@@ -15,7 +16,13 @@ public class ApktoolsWrapper {
 	}
 	
 	public void unpackApkResources(Path path) throws IOException{
-		String jarCommand = "java -jar "+Config.getConfig().getApktoolsPath()+"apktools.jar d -f "+path.toString()+" =o "+config.getSpawnFolder();
+		
+		File possiblyExistantDirectory = new File(config.getSpawnFolder());
+		if (possiblyExistantDirectory.exists()){
+			possiblyExistantDirectory.delete();
+		}
+		
+		String jarCommand = "java -jar "+Config.getConfig().getApktoolsPath()+"apktools.jar d -f "+path.toString()+" -o "+config.getSpawnFolder();
 		Process jarProc =  Runtime.getRuntime().exec(jarCommand);
         
 		try {
