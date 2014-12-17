@@ -16,7 +16,7 @@ The goal of this project is to provide a tool to allow concolic analysis of arbi
 
 ## Requirements
 
-Linux or possibly OSX only.  Windows is not supported at this time.  Hence, the management has provided a lovely Vagrant virtual machine.
+Linux or possibly OSX only.  *Windows is not supported at this time.*  Hence, the management has provided a lovely Vagrant virtual machine.
 
 ## CAA Project Setup:
 
@@ -72,7 +72,7 @@ Development of the project is recommend to be done outside the provided Vagrant 
 ### Steps for setup
 
 1. Clone this project locally
-2. Download and install the latest version of [Eclipse](https://www.eclipse.org/downloads/) for Java
+2. Download and install the latest version of [Eclipse](https://www.eclipse.org/downloads/) for Java if you don't have a version already
 3. Launch Eclipse.  You should see a window like the following: ![Workspace](https://raw.githubusercontent.com/PatrickMcAfee/ConcolicAndroidWrapper/EclipseSetup/docs/images/Workspace.png)
 4. Click "Browse" and set your workspace to $LOCAL\_REPO/AnalysisEngine, where $LOCAL\_REPO is where this repo was cloned to.  Click "Open" and then "Okay"
 5. You should see the following ![Welcome](https://raw.githubusercontent.com/PatrickMcAfee/ConcolicAndroidWrapper/EclipseSetup/docs/images/Welcome.png)
@@ -82,9 +82,19 @@ Development of the project is recommend to be done outside the provided Vagrant 
 8. On the next window, select "Browse" in the top right, select the $LOCAL\_REPO/AnalysisEngine directory (should be the default) and click "Okay." After a scan, you should see something like the following ![Import Browsed](https://raw.githubusercontent.com/PatrickMcAfee/ConcolicAndroidWrapper/EclipseSetup/docs/images/ImportBrowsed.png)
 9. Eclipse should now have the project open, similar to this ![Loaded](https://raw.githubusercontent.com/PatrickMcAfee/ConcolicAndroidWrapper/EclipseSetup/docs/images/OpenProject.png)
 
-### Running the project in Eclipse
+### Running the project inside Eclipse during development
 
-1.
+1. Before going any further, make sure you have run through the _General Setup_ part of this guide.  The virtual machine does not need to stay running while developing, but several tools are downloaded during the initial setup
+2. If you're running Eclipse inside the Vagrant VM, skip this step.  Otherwise, copy the file "site.properties" from "$LOCAL\_REPO/puppet/modules/java-pathfinder/sources" to "~/.jpf" as this is required for Java Pathfinder to run correctly.  Make sure to update the following in your copy
+  1. jpf-core = $LOCAL\_REPO/AnalysisEngine/tools/jpf/jpf-core, where $LOCAL\_REPO is where you cloned the repository
+  2. jpf-symbc = $LOCAL\_REPO/AnalysisEngine/tools/jpf/jpf-symbc, where $LOCAL\_REPO is where you cloned the repository
+3. In Eclipse, go to the menu bar and select "Run" -> "Run Configurations" ![Top Configurations](https://raw.githubusercontent.com/PatrickMcAfee/ConcolicAndroidWrapper/EclipseSetup/docs/images/TopConfigurations.png)
+4. You should see the following ![Run Configurations](https://raw.githubusercontent.com/PatrickMcAfee/ConcolicAndroidWrapper/EclipseSetup/docs/images/RunConfigurations.png)
+5. Double click "Java Application" and the following should appear ![Run Conf Empty](https://raw.githubusercontent.com/PatrickMcAfee/ConcolicAndroidWrapper/EclipseSetup/docs/images/RunConfEmpty.png)
+6. Give your run configuration a name.  The project should be "AndroidAnalysisEngine" and the main class should be "com.rit.AndroidAnalysisEngine.App" ![Run Conf Fille](https://raw.githubusercontent.com/PatrickMcAfee/ConcolicAndroidWrapper/EclipseSetup/docs/images/RunConfFilled.png)
+7. Click the Arguments tab just under the name field.  For program arguments, enter without quotes "-apk $AN\_APK\_FILE" *where $AN\_APK\_FILE is either an absolute path or a path relative to $LOCAL\_REPO/AnalysisEngine/AndroidAnalysisEngine* where there is an apk ![Arguments](https://raw.githubusercontent.com/PatrickMcAfee/ConcolicAndroidWrapper/EclipseSetup/docs/images/Arguments.png)
+8. Click "Apply" and "Close." At this point, you should be able to use the Debug and Play buttons to start the app ![Debug and Play](https://raw.githubusercontent.com/PatrickMcAfee/ConcolicAndroidWrapper/EclipseSetup/docs/images/DebugAndPlay.png)
+9. Once one of those button is clicked, you should see output in the Terminal window at the bottom, starting with "Firing up!"
 
 ## Credits
 
