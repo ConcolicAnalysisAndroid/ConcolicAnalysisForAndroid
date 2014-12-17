@@ -21,7 +21,7 @@ Linux or possibly OSX only.  Windows is not supported at this time.  Hence, the 
 ## CAA Project Setup:
 
 1. In the VM, navigate to "~/Workspace/AnalysisEngine"
-2. In the host OS, import "AnalysisEngine/AndroidAnalysisEngine/" as a maven project in the IDE of your choice.  If this instruction is insufficient, please see [Project Setup in Eclipse](#eclipse)
+2. In the host OS, import "AnalysisEngine/AndroidAnalysisEngine/" as a maven project in the IDE of your choice.  If this instruction is insufficient, please see _Project Setup in Eclipse_ below.
 
 ## Building the Project:
 
@@ -65,11 +65,16 @@ Linux or possibly OSX only.  Windows is not supported at this time.  Hence, the 
 
 Due to an outstanding issue in Java Pathfinder (see [link](https://groups.google.com/forum/#!topic/java-pathfinder/vAcaeTLL1OY)), output is limited.  Coverage is currently limited to activity initializations.
 
-## Project Setup in Eclipse {#eclipse}
+## Project Setup in Eclipse
 
 Development of the project is recommend to be done outside the provided Vagrant machine.  At this time, ONLY Unix-like systems are supported (OSX and CentOS Linux are tested - BSD flavors and Haiku are not).  If you do not have a Unix-like system available, uncomment the line "config.vm.boot\_mode = :gui" in the Vagrantfile and install Eclipse inside the VM.  This is not recommended, but should be adequate enough.
 
-
+Steps for setup:
+1. Clone this project locally
+2. Download and install the latest version of [Eclipse](https://www.eclipse.org/downloads/) for Java
+3. Launch Eclipse.  You should see a window like the following: ![Workspace](docs/)
+4. Click "Browse" and set your workspace to $LOCAL_REPO/AnalysisEngine.  Click "Open" and then "Okay"
+5.
 
 ## Credits
 
