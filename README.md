@@ -67,14 +67,14 @@ Due to an outstanding issue in Java Pathfinder (see [link](https://groups.google
 
 ## Project Setup in Eclipse
 
-Development of the project is recommend to be done outside the provided Vagrant machine.  At this time, ONLY Unix-like systems are supported (OSX and CentOS Linux are tested - BSD flavors and Haiku are not).  If you do not have a Unix-like system available, uncomment the line "config.vm.boot\_mode = :gui" in the Vagrantfile and install Eclipse inside the VM.  This is not recommended, but should be adequate enough.
+Development of the project is recommend to be done outside the provided Vagrant machine.  At this time, ONLY Unix-like systems are supported (OSX and CentOS Linux are tested - BSD flavors and Haiku are not).  `If you do not have a Unix-like system available, uncomment the line "config.vm.boot\_mode = :gui` in the Vagrantfile and install Eclipse inside the VM.  This is not recommended, but should be adequate enough.
 
-Steps for setup:
+### Steps for setup
+
 1. Clone this project locally
 2. Download and install the latest version of [Eclipse](https://www.eclipse.org/downloads/) for Java
 3. Launch Eclipse.  You should see a window like the following: ![Workspace](https://raw.githubusercontent.com/PatrickMcAfee/ConcolicAndroidWrapper/EclipseSetup/docs/images/Workspace.png)
 4. Click "Browse" and set your workspace to $LOCAL_REPO/AnalysisEngine.  Click "Open" and then "Okay"
-5.
 
 ## Credits
 
