@@ -72,7 +72,7 @@ Development of the project is recommend to be done outside the provided Vagrant 
 Steps for setup:
 1. Clone this project locally
 2. Download and install the latest version of [Eclipse](https://www.eclipse.org/downloads/) for Java
-3. Launch Eclipse.  You should see a window like the following: ![Workspace](docs/)
+3. Launch Eclipse.  You should see a window like the following: ![Workspace](https://raw.githubusercontent.com/PatrickMcAfee/ConcolicAndroidWrapper/EclipseSetup/docs/images/Workspace.png)
 4. Click "Browse" and set your workspace to $LOCAL_REPO/AnalysisEngine.  Click "Open" and then "Okay"
 5.
 
