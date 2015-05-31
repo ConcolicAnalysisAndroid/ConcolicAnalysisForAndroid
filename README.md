@@ -7,7 +7,7 @@ The goal of this project is to provide a tool to allow concolic analysis of arbi
 ## General setup:
 
 1. Set up the VM
-  1. Install Vagrant
+  1.  [Install Vagrant](http://docs.vagrantup.com/v2/installation/)
   2. Go to the root directory of the repo (where this file is)
   3. Run "vagrant up" and wait for the machine to come online
   4. Run "vagrant ssh" to enter tphe virtual machine
