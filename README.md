@@ -10,7 +10,7 @@ The goal of this project is to provide a tool to allow concolic analysis of arbi
   1. Install Vagrant
   2. Go to the root directory of the repo (where this file is)
   3. Run "vagrant up" and wait for the machine to come online
-  4. Run "vagrant ssh" to enter the virtual machine
+  4. Run "vagrant ssh" to enter tphe virtual machine
 2. All included projects will be in "~/Workspace/" in the VM
 3. Needed tools should be all installed via puppet or vagrant scripts.  No configuration there should be necessary.
 
@@ -60,10 +60,6 @@ Linux or possibly OSX only.  *Windows is not supported at this time.*  Hence, th
 * [ApkTools](https://code.google.com/p/android-apktool/)
 * [Dex2Jar](https://code.google.com/p/dex2jar/)
 * [Robolectric](http://robolectric.org/)
-
-## Project status
-
-Due to an outstanding issue in Java Pathfinder (see [link](https://groups.google.com/forum/#!topic/java-pathfinder/vAcaeTLL1OY)), output is limited.  Coverage is currently limited to activity initializations.
 
 ## Project Setup in Eclipse
 
