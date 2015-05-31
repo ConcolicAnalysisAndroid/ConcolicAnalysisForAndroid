@@ -90,10 +90,10 @@ Development of the project is recommend to be done outside the provided Vagrant 
 6. Give your run configuration a name.  The project should be "AndroidAnalysisEngine" and the main class should be "com.rit.AndroidAnalysisEngine.App" ![Run Conf Fille](docs/images/RunConfFilled.png)
 7. Click the Arguments tab just under the name field.  For program arguments, enter without quotes "-apk $AN\_APK\_FILE" *where $AN\_APK\_FILE is either an absolute path or a path relative to $LOCAL\_REPO/AnalysisEngine/AndroidAnalysisEngine* where there is an apk ![Arguments](docs/images/Arguments.png)
 8. Click "Apply" and "Close." At this point, you should be able to use the Debug and Play buttons to start the app ![Debug and Play](docs/images/DebugAndPlay.png)
-9. Once one of those button is clicked, you should see output in the Terminal window at the bottom, starting with "Firing up!" The output of this is shown below. [Arguments](docs/images/CAA_Eclipse_small.png)
+9. Once one of those button is clicked, you should see output in the Terminal window at the bottom, starting with "Firing up!" The output of this is shown below. ![Arguments](docs/images/CAA_Eclipse_small.png)
 
 10. A sample of the final tool output is shown below:
-[FinalToolOutput](docs/images/output_small.png)
+![FinalToolOutput](docs/images/output_small.png)
 
 
 
